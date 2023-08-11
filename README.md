@@ -1,3 +1,3 @@
-<p style="text-align: center; font-weight: bold">SalesBook</p>
+# <p align="center">SalesBook</p>
 
-- Building a next generation sales book app
+### <p align="center">Building a simple, next generation sales book application</p>
