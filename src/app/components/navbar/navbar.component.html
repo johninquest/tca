@@ -1,1 +1,57 @@
-<p>navbar works!</p>
+<nav>
+  <ul class="desktop-nav">
+    <li class="home">
+      <a routerLink="/">sales book</a>
+    </li>
+
+    <li>
+      <a routerLink="/blog">customers</a>
+    </li>
+    <li>
+      <a routerLink="/glossary">products</a>
+    </li>
+    <li>
+      <a routerLink="/jobs">sales</a>
+    </li>
+    <!--     <li>
+      <a routerLink="/jobs">jobs</a>
+    </li>
+    <li>
+      <a routerLink="/marketplace">marketplace</a>
+    </li>
+    <li>
+      <a routerLink="/news">news</a>
+    </li>
+-->
+  </ul>
+  <mat-menu #menu="matMenu">
+    <!-- <button mat-menu-item routerLink="/home" matTooltip="Home">
+      <mat-icon>home</mat-icon>
+      <span class="btn-txt">home</span>
+    </button> -->
+    <button mat-menu-item>
+      <!--  <mat-icon>info</mat-icon> -->
+      <span class="btn-txt">customers</span>
+    </button>
+    <button mat-menu-item>
+      <span class="btn-txt">products</span>
+    </button>
+    <button mat-menu-item>
+      <!--  <mat-icon>info</mat-icon> -->
+      <span class="btn-txt">sales</span>
+    </button>
+    <!--     <button mat-menu-item routerLink="/jobs">
+      <span class="btn-txt">jobs</span>
+    </button>
+    <button mat-menu-item routerLink="/marketplace">
+      <span class="btn-txt">marketplace</span>
+    </button>
+    <button mat-menu-item routerLink="/news">
+      <span class="btn-txt">news</span>
+    </button>
+ -->
+  </mat-menu>
+  <button mat-icon-button [matMenuTriggerFor]="menu" class="mobile-nav">
+    <mat-icon>menu</mat-icon>
+  </button>
+</nav>
