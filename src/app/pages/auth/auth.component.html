@@ -1,1 +1,24 @@
-<p>auth works!</p>
+<div
+  class="google-signin"
+  (click)="onClickGoogleAuth()"
+  matTooltip="Mit Google-Konto anmelden"
+>
+  <button mat-stroked-button>
+    <span class="logo"><img src="assets/imgs/google_logo.png" /></span>
+    <span class="txt">Continue with Google</span>
+  </button>
+</div>
+
+<div class="facebook-signin" (click)="onClickFacebookAuth()">
+  <button mat-stroked-button>
+    <span class="logo"><img src="assets/imgs/facebook_logo.png" /></span>
+    <span class="txt">Continue with Facebook</span>
+  </button>
+</div>
+
+<div class="email-signin" (click)="onClickEmailAuth()">
+  <button mat-stroked-button>
+    <span class="logo"><mat-icon>email</mat-icon></span>
+    <span class="txt">Continue with E-mail</span>
+  </button>
+</div>

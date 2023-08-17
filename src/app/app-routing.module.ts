@@ -7,23 +7,23 @@ import { ProductsComponent } from './pages/products/products.component';
 import { SalesComponent } from './pages/sales/sales.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/auth', pathMatch: 'full' },
   {
     path: 'auth',
     component: AuthComponent,
   },
-    {
+  {
     path: 'customers',
     component: CustomersComponent,
   },
-    {
+  {
     path: 'home',
     component: HomeComponent,
   },
-    {
+  {
     path: 'products',
     component: ProductsComponent,
-  }, 
+  },
   {
     path: 'sales',
     component: SalesComponent,

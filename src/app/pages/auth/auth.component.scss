@@ -1,0 +1,89 @@
+.google-signin {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto 1rem auto;
+  cursor: pointer;
+  width: 18rem;
+  height: 3rem;
+
+  button {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+
+    letter-spacing: 0.1rem;
+    word-spacing: 0.3rem;
+    .logo {
+      float: left;
+      margin: 0.5rem 0.5rem;
+      img {
+        height: 16px;
+        width: 16px;
+        background-repeat: no-repeat;
+      }
+    }
+    .txt {
+      font-weight: bold;
+      margin-top: 0.3rem;
+    }
+  }
+}
+
+.facebook-signin {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto 1rem auto;
+  cursor: pointer;
+  width: 18rem;
+  height: 3rem;
+  button {
+    width: 90%;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.3rem;
+    .logo {
+      float: left;
+      margin: 0.6rem 0.2rem auto auto;
+      img {
+        height: 16px;
+        width: 16px;
+        background-repeat: no-repeat;
+      }
+    }
+    .txt {
+      font-weight: bold;
+    }
+  }
+}
+
+.email-signin {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto 1rem auto;
+  cursor: pointer;
+  width: 18rem;
+  height: 3rem;
+  button {
+    width: 90%;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.3rem;
+    .logo {
+      float: left;
+      margin: 0.6rem 0.2rem auto auto;
+      img {
+        height: 16px;
+        width: 16px;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .txt {
+      font-weight: bold;
+    }
+  }
+}
