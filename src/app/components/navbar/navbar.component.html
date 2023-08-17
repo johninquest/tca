@@ -5,13 +5,16 @@
     </li>
 
     <li>
+      <a routerLink="/">home</a>
+    </li>
+    <li>
       <a routerLink="/customers">customers</a>
     </li>
     <li>
       <a routerLink="/products">products</a>
     </li>
     <li>
-      <a routerLink="/jobs">sales</a>
+      <a routerLink="/sales">sales</a>
     </li>
     <!--     <li>
       <a routerLink="/jobs">jobs</a>
@@ -29,6 +32,10 @@
       <mat-icon>home</mat-icon>
       <span class="btn-txt">home</span>
     </button> -->
+    <button mat-menu-item routerLink="/">
+      <!--  <mat-icon>info</mat-icon> -->
+      <span class="btn-txt">home</span>
+    </button>
     <button mat-menu-item routerLink="/customers">
       <!--  <mat-icon>info</mat-icon> -->
       <span class="btn-txt">customers</span>
@@ -36,7 +43,7 @@
     <button mat-menu-item routerLink="/products">
       <span class="btn-txt">products</span>
     </button>
-    <button mat-menu-item>
+    <button mat-menu-item routerLink="/sales">
       <!--  <mat-icon>info</mat-icon> -->
       <span class="btn-txt">sales</span>
     </button>
