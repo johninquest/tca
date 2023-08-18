@@ -11,8 +11,8 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$sba-primary: mat.define-palette(mat.$indigo-palette);
-$sba-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$sba-primary: mat.define-palette(mat.$teal-palette, 500, 300, 100);
+$sba-accent: mat.define-palette(mat.$gray-palette, 800, 500, 300, 100);
 
 // The warn palette is optional (defaults to red).
 $sba-warn: mat.define-palette(mat.$red-palette);
@@ -40,27 +40,28 @@ html,
 body {
   height: 100%;
 }
-body {
+/* body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-}
-/* 
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-$myfont: "Lato", sans-serif;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+$myfont: "Karla", sans-serif;
 * {
   font: 100% $myfont;
 } 
-*/
 
 :root {
   --primary-color: #424242;
   --secondary-color: #009688;
   --secondary-color-light: #4db6ac;
-  --secondary-color-lighter: #b2dfdb;
+  --secondary-color-lighter: #b2dfdb; 
+  --secondary-color-darker: #00695C; 
   --txt-black-color: #212121;
   --txt-white-color: #e0e0e0;
   --bg-color: #f5f5f5;
 }
 
-html, body { height: 100%; }
+/* html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+ */

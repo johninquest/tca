@@ -7,11 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AuthComponent {
   onClickGoogleAuth() {
-    console.log('Tapped Google Auth');
+    console.log('Tapped Google auth');
     /* let googleAuthResponse = this._fbAuthService.googleAuth();
     googleAuthResponse
       .then((res) => {
-        // console.log('Google auth response => ', res);
+       
         res.user.getIdToken().then((t) => {
           sessionStorage.setItem('zet_access_token', t);
           this._router.navigateByUrl('/home');
@@ -23,7 +23,7 @@ export class AuthComponent {
   }
 
   onClickFacebookAuth() {
-    console.log('Tapped Facebook Auth');
+    console.log('Tapped Facebook auth');
     /*    let googleAuthResponse = this._fbAuthService.facebookAuth();
     googleAuthResponse
       .then((res) => {
@@ -39,7 +39,7 @@ export class AuthComponent {
   }
 
   onClickEmailAuth() {
-    console.log('Tapped EmailAuth');
+    console.log('Tapped Email auth');
     /*  this._router.navigateByUrl('/auth/email'); */
   }
 }

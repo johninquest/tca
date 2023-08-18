@@ -28,6 +28,10 @@ const routes: Routes = [
     path: 'sales',
     component: SalesComponent,
   },
+  {
+    path: '**',
+    component: AuthComponent,
+  },
 ];
 
 @NgModule({
