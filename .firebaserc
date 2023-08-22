@@ -1,14 +1,18 @@
 {
+  "projects": {
+    "default": "salestraqr"
+  },
   "targets": {
     "salestraqr": {
       "hosting": {
         "sba": [
           "salestraqr"
+        ],
+        "salestraqr": [
+          "hosting"
         ]
       }
     }
   },
-  "projects": {
-    "default": "salestraqr"
-  }
+  "etags": {}
 }
