@@ -9,9 +9,12 @@ import { HomeComponent } from './pages/home/home.component';
 import { AuthComponent } from './pages/auth/auth.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { CustomersComponent } from './pages/customers/customers.component';
 import { ProductsComponent } from './pages/products/products.component';
-import { SalesComponent } from './pages/sales/sales.component';
+import { CustomerListComponent } from './pages/customers/customer-list/customer-list.component';
+import { CustomerFormComponent } from './pages/customers/customer-form/customer-form.component';
+import { CustomerDetailsComponent } from './pages/customers/customer-details/customer-details.component';
+import { UserDetailsComponent } from './pages/user/user-details/user-details.component';
+import { UserFormComponent } from './pages/user/user-form/user-form.component';
 
 @NgModule({
   declarations: [
@@ -20,9 +23,12 @@ import { SalesComponent } from './pages/sales/sales.component';
     AuthComponent,
     FooterComponent,
     NavbarComponent,
-    CustomersComponent,
     ProductsComponent,
-    SalesComponent
+    CustomerListComponent,
+    CustomerFormComponent,
+    CustomerDetailsComponent,
+    UserDetailsComponent,
+    UserFormComponent,
   ],
   imports: [
     BrowserModule,

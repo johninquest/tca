@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthComponent } from './pages/auth/auth.component';
-import { CustomersComponent } from './pages/customers/customers.component';
+import { CustomerListComponent } from './pages/customers/customer-list/customer-list.component';
+import { CustomerFormComponent } from './pages/customers/customer-form/customer-form.component';
+import { CustomerDetailsComponent } from './pages/customers/customer-details/customer-details.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductsComponent } from './pages/products/products.component';
-import { SalesComponent } from './pages/sales/sales.component';
+import { UserDetailsComponent } from './pages/user/user-details/user-details.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/auth', pathMatch: 'full' },
@@ -13,8 +16,16 @@ const routes: Routes = [
     component: AuthComponent,
   },
   {
-    path: 'customers',
-    component: CustomersComponent,
+    path: 'customer-list',
+    component: CustomerListComponent,
+  },
+  {
+    path: 'customer-form',
+    component: CustomerFormComponent,
+  },
+  {
+    path: 'customer-details',
+    component: CustomerDetailsComponent,
   },
   {
     path: 'home',
@@ -23,10 +34,10 @@ const routes: Routes = [
   {
     path: 'products',
     component: ProductsComponent,
-  },
+  }, 
   {
-    path: 'sales',
-    component: SalesComponent,
+    path: 'user',
+    component: UserDetailsComponent,
   },
   {
     path: '**',
