@@ -15,6 +15,10 @@ import { CustomerFormComponent } from './pages/customers/customer-form/customer-
 import { CustomerDetailsComponent } from './pages/customers/customer-details/customer-details.component';
 import { UserDetailsComponent } from './pages/user/user-details/user-details.component';
 import { UserFormComponent } from './pages/user/user-form/user-form.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
 @NgModule({
   declarations: [
@@ -34,7 +38,7 @@ import { UserFormComponent } from './pages/user/user-form/user-form.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule, 
-    MaterialModules,
+    MaterialModules, provideFirebaseApp(() => initializeApp(environment.firebase)), provideAuth(() => getAuth()), provideFirestore(() => getFirestore()),
   ],
   providers: [],
   bootstrap: [AppComponent]

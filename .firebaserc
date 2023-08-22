@@ -1,0 +1,21 @@
+{
+  "targets": {
+    "sales-trackr-app": {
+      "hosting": {
+        "sba": [
+          "sales-trackr-app"
+        ]
+      }
+    },
+    "salestraqr": {
+      "hosting": {
+        "sba": [
+          "salestraqr"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "salestraqr"
+  }
+}
