@@ -1,5 +1,5 @@
 nav {
-  background-color: black;
+  background-color: var(--primary-color);
   height: 3rem;
   width: 100%;
   left: 0;
@@ -51,7 +51,7 @@ nav ul li div mat-select::-ms-expand {
 }
 
 nav ul li a:hover {
-  color: var(--secondary-color-lighter);
+  color: var(--secondary-color);
   font-weight: bolder;
 }
 

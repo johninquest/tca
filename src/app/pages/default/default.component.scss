@@ -1,0 +1,17 @@
+.centralize {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+   .headline {
+    color: indianred;
+    font-size: 1.5rem;
+    margin: 1rem;
+   }
+   .date {
+    text-align: center;
+    margin: 1rem;
+  }
+  }

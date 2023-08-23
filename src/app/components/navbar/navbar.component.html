@@ -36,12 +36,16 @@
       <span class="btn-txt">home</span>
     </button> -->
     <button mat-menu-item routerLink="/home">
-      <!--  <mat-icon>info</mat-icon> -->
-      <span class="btn-txt">home</span>
+      <mat-icon>home</mat-icon>
+     <span class="btn-txt">home</span>
     </button>
     <button mat-menu-item routerLink="/customer-list">
       <!--  <mat-icon>info</mat-icon> -->
       <span class="btn-txt">customers</span>
+    </button>
+    <button mat-menu-item>
+      <!--  <mat-icon>info</mat-icon> -->
+      <span class="btn-txt">inventory</span>
     </button>
     <button mat-menu-item routerLink="/products">
       <span class="btn-txt">products</span>
@@ -50,9 +54,9 @@
       <!--  <mat-icon>info</mat-icon> -->
       <span class="btn-txt">sales</span>
     </button>
-    <button mat-menu-item routerLink="/user">
-      <!--  <mat-icon>info</mat-icon> -->
-      <span class="btn-txt">user</span>
+    <button mat-menu-item routerLink="/user" matTooltip="User information">
+      <mat-icon>person</mat-icon>
+     <span class="btn-txt">user</span>
     </button>
     <!--     <button mat-menu-item routerLink="/jobs">
       <span class="btn-txt">jobs</span>

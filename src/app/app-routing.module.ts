@@ -7,10 +7,11 @@ import { CustomerDetailsComponent } from './pages/customers/customer-details/cus
 import { HomeComponent } from './pages/home/home.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { UserDetailsComponent } from './pages/user/user-details/user-details.component';
+import { DefaultComponent } from './pages/default/default.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/auth', pathMatch: 'full' },
+  { path: '', redirectTo: '/default', pathMatch: 'full' },
   {
     path: 'auth',
     component: AuthComponent,
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'customer-details',
     component: CustomerDetailsComponent,
+  },
+  {
+    path: 'default',
+    component: DefaultComponent,
   },
   {
     path: 'home',
