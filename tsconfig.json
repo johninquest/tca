@@ -3,6 +3,9 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "tslib": ["./node_modules/tslib/tslib.d.ts"]
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -21,10 +24,7 @@
     "useDefineForClassFields": false,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
-    "lib": [
-      "ES2022",
-      "dom"
-    ], 
+    "lib": ["ES2022", "dom"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
