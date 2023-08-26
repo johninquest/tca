@@ -3,12 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { AuthComponent } from './pages/auth/auth.component';
 import { CustomerListComponent } from './pages/customers/customer-list/customer-list.component';
 import { CustomerFormComponent } from './pages/customers/customer-form/customer-form.component';
-import { CustomerDetailsComponent } from './pages/customers/customer-details/customer-details.component'; 
+import { CustomerDetailsComponent } from './pages/customers/customer-details/customer-details.component';
 import { DefaultComponent } from './pages/default/default.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { UserDetailsComponent } from './pages/user/user-details/user-details.component';
-
 
 const routes: Routes = [
   { path: '', redirectTo: '/default', pathMatch: 'full' },
@@ -39,14 +38,14 @@ const routes: Routes = [
   {
     path: 'products',
     component: ProductsComponent,
-  }, 
+  },
   {
     path: 'user',
     component: UserDetailsComponent,
   },
   {
     path: '**',
-    component: AuthComponent,
+    component: DefaultComponent,
   },
 ];
 
