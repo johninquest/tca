@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/sba",
+    "public": "dist/nwtrackr",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {

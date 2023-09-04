@@ -1,3 +1,3 @@
-# <p align="center">SalesTraqr</p>
+# <p align="center">NetWorthTrackr</p>
 
-### <p align="center">Building a simple, next generation sales records app</p>
+### <p align="center">Building a simple, next generation web app for tracking your net worth</p>
