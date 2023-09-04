@@ -6,6 +6,7 @@ import { CustomerDetailsComponent } from './pages/customers/customer-details/cus
 import { DefaultComponent } from './pages/default/default.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductsComponent } from './pages/products/products.component';
+import { DeviceInfoComponent } from './pages/device-info/device-info.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/default', pathMatch: 'full' },
@@ -24,6 +25,11 @@ const routes: Routes = [
   {
     path: 'default',
     component: DefaultComponent,
+  },
+  {
+    path: 'device',
+    component: DeviceInfoComponent,
+    title: 'Device information',
   },
   {
     path: 'home',

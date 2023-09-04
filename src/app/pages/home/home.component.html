@@ -1,13 +1,17 @@
 <app-navbar></app-navbar>
-<div class="title">
-  NetWorthTrackr
-</div>
+<div class="title">NetWorthTrackr</div>
 
 <div class="btns">
   <!-- <button mat-raised-button color="primary" (click)="goToPage('customer-list')">customers</button> -->
-  <button mat-raised-button color="primary">assets</button> 
-  <button mat-raised-button color="primary" (click)="goToPage('products')">liabilities</button> 
+  <button mat-raised-button color="primary">assets</button>
+  <button mat-raised-button color="primary" (click)="goToPage('products')">
+    liabilities
+  </button>
   <button mat-raised-button color="primary">net worth</button>
 </div>
 
 <app-footer></app-footer>
+
+<div class="device-icon" routerLink="/device">
+  <mat-icon>perm_device_information</mat-icon>
+</div>
