@@ -13,4 +13,8 @@ export class HomeComponent {
     this._router.navigateByUrl(routeName)
   }
 
+  underConstruction() {
+    alert('Under construction!')
+  }
+
 }

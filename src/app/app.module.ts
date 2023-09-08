@@ -9,9 +9,6 @@ import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProductsComponent } from './pages/products/products.component';
-import { CustomerListComponent } from './pages/customers/customer-list/customer-list.component';
-import { CustomerFormComponent } from './pages/customers/customer-form/customer-form.component';
-import { CustomerDetailsComponent } from './pages/customers/customer-details/customer-details.component';
 import { DefaultComponent } from './pages/default/default.component';
 import { DeviceInfoComponent } from './pages/device-info/device-info.component';
 import { NetworthComponent } from './pages/networth/networth.component';
@@ -23,9 +20,6 @@ import { NetworthComponent } from './pages/networth/networth.component';
     FooterComponent,
     NavbarComponent,
     ProductsComponent,
-    CustomerListComponent,
-    CustomerFormComponent,
-    CustomerDetailsComponent,
     DefaultComponent,
     DeviceInfoComponent,
     NetworthComponent,
