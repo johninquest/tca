@@ -14,6 +14,7 @@ import { CustomerFormComponent } from './pages/customers/customer-form/customer-
 import { CustomerDetailsComponent } from './pages/customers/customer-details/customer-details.component';
 import { DefaultComponent } from './pages/default/default.component';
 import { DeviceInfoComponent } from './pages/device-info/device-info.component';
+import { NetworthComponent } from './pages/networth/networth.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { DeviceInfoComponent } from './pages/device-info/device-info.component';
     CustomerDetailsComponent,
     DefaultComponent,
     DeviceInfoComponent,
+    NetworthComponent,
   ],
   imports: [
     BrowserModule,

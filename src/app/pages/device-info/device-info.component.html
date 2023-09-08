@@ -1,8 +1,12 @@
 <div class="device-info">
   <h3>Device information</h3>
   <ul>
-    <li><span style="font-weight: bold;">User agent:</span> {{ deviceUserAgent }}</li>
-    <li><span style="font-weight: bold;">Device type:</span> {{ deviceType }}</li>
+    <li>
+      <span style="font-weight: bold">User agent:</span> {{ deviceUserAgent }}
+    </li>
+    <li>
+      <span style="font-weight: bold">Device type:</span> {{ deviceType }}
+    </li>
     <!--
     <li>Platform: {{ deviceInfo.platform }}</li>
     <li>App version: {{ deviceInfo.appVersion }}</li>
@@ -19,5 +23,8 @@
   </ul>
 </div>
 
-<div style="text-align: center; margin: 1rem;">{{deviceUserAgent}}</div>
+<div style="text-align: center; margin: 1rem">{{ deviceUserAgent }}</div>
 
+<div style="text-align: center; margin: 3rem 1rem">
+  <button mat-fab color="secondary" routerLink="/home">HOME</button>
+</div>

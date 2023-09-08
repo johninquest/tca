@@ -1,0 +1,21 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { NetworthComponent } from './networth.component';
+
+describe('NetworthComponent', () => {
+  let component: NetworthComponent;
+  let fixture: ComponentFixture<NetworthComponent>;
+
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      declarations: [NetworthComponent]
+    });
+    fixture = TestBed.createComponent(NetworthComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
