@@ -10,10 +10,11 @@ const routes: Routes = [
   { path: '', redirectTo: '/default', pathMatch: 'full' },
   {
     path: 'default',
-    component: DefaultComponent, title: 'Under construction'
+    component: DefaultComponent,
+    title: 'Under construction',
   },
   {
-    path: 'device',
+    path: 'device-info',
     component: DeviceInfoComponent,
     title: 'Device information',
   },

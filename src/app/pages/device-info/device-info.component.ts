@@ -14,10 +14,13 @@ export class DeviceInfoComponent implements OnInit {
     this.getScreenInfo();
     this.getDeviceOrientation();
     this.getDeviceType();
+    /* this.isDeviceTouch(); */
   }
-  deviceInfo: any;
+
   deviceUserAgent: any;
   deviceType: any;
+  deviceOrientation: any;
+  deviceScreenResolution: any;
 
   // Device info using plain JavaScript
   getUserAgent() {
@@ -30,12 +33,16 @@ export class DeviceInfoComponent implements OnInit {
     let screenWidth = window.screen.width;
     let screenHeight = window.screen.height;
     let screenResolution = `${screenWidth}x${screenHeight}`;
-    console.log(`Screen Resolution: ${screenResolution}`);
+    this.deviceScreenResolution = screenResolution;
   }
 
   getDeviceOrientation() {
-    const isPortrait = window.matchMedia('(orientation: portrait)').matches;
-    console.log(`Is Portrait Mode: ${isPortrait}`);
+    let isPortrait = window.matchMedia('(orientation: portrait)').matches;
+    if (isPortrait === true) {
+      this.deviceOrientation = 'Portrait';
+    } else {
+      this.deviceOrientation = 'Landscape';
+    }
   }
 
   isDeviceTouch() {
@@ -48,17 +55,17 @@ export class DeviceInfoComponent implements OnInit {
 
   getDeviceType() {
     let screenWidth = window.screen.width;
-    let screenHeight = window.screen.height;
+    // let screenHeight = window.screen.height;
 
     if (screenWidth < 768) {
       console.log('Device Type: Mobile');
-      return (this.deviceType = 'Mobile');
+      this.deviceType = 'Mobile';
     } else if (screenWidth >= 768 && screenWidth < 1024) {
       console.log('Device Type: Tablet');
-      return (this.deviceType = 'Tablet');
+      this.deviceType = 'Tablet';
     } else {
       console.log('Device Type: Desktop');
-      return (this.deviceType = 'Tablet');
+      this.deviceType = 'Desktop';
     }
   }
 }

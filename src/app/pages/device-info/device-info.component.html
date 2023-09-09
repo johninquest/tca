@@ -7,6 +7,14 @@
     <li>
       <span style="font-weight: bold">Device type:</span> {{ deviceType }}
     </li>
+    <li>
+      <span style="font-weight: bold">Screen orientation:</span>
+      {{ deviceOrientation }}
+    </li>
+    <li>
+      <span style="font-weight: bold">Screen resolution:</span>
+      {{ deviceScreenResolution }}
+    </li>
     <!--
     <li>Platform: {{ deviceInfo.platform }}</li>
     <li>App version: {{ deviceInfo.appVersion }}</li>
@@ -23,8 +31,8 @@
   </ul>
 </div>
 
-<div style="text-align: center; margin: 1rem">{{ deviceUserAgent }}</div>
+<!-- <div style="text-align: center; margin: 1rem">{{ deviceUserAgent }}</div> -->
 
 <div style="text-align: center; margin: 3rem 1rem">
-  <button mat-fab color="secondary" routerLink="/home">HOME</button>
+  <button mat-fab color="primary" routerLink="/home">HOME</button>
 </div>
