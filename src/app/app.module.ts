@@ -12,6 +12,7 @@ import { ProductsComponent } from './pages/products/products.component';
 import { DefaultComponent } from './pages/default/default.component';
 import { DeviceInfoComponent } from './pages/device-info/device-info.component';
 import { NetworthComponent } from './pages/networth/networth.component';
+import { CreateComponent } from './pages/create/create.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { NetworthComponent } from './pages/networth/networth.component';
     DefaultComponent,
     DeviceInfoComponent,
     NetworthComponent,
+    CreateComponent,
   ],
   imports: [
     BrowserModule,
