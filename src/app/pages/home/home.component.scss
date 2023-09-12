@@ -20,11 +20,12 @@
   }
 }
 
-.add-btn {
+.create-btn {
   text-align: center;
   margin: 1rem;
+  padding: 1rem;
   mat-icon {
-    transform: scale(1.5);
+    transform: scale(3);
     color: var(--secondary-color);
     cursor: pointer;
   }
