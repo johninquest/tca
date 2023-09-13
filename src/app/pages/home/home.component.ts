@@ -4,17 +4,20 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
   constructor(private _router: Router) {}
 
   goToPage(routeName: string) {
-    this._router.navigateByUrl(routeName)
+    this._router.navigateByUrl(routeName);
+  }
+
+  goToCreateForm(createType: string) {
+    // this._router.navigateByUrl(routeName);
   }
 
   underConstruction() {
-    alert('Under construction!')
+    alert('Under construction!');
   }
-
 }

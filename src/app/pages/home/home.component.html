@@ -12,10 +12,20 @@
   <button mat-raised-button color="primary" (click)="goToPage('networth')">
     net worth
   </button>
-
 </div>
 <div class="create-btn">
-    <mat-icon (click)="goToPage('create')" matTooltip="Enter new Asset/Liability">add_circle</mat-icon>
+  <mat-icon (click)="goToPage('create')" matTooltip="Enter new Asset/Liability"
+    >add_circle</mat-icon
+  >
+</div>
+<div style="text-align: center; margin: 1rem">
+  <button mat-fab color="primary" [matMenuTriggerFor]="menu">
+    <span style="font-size: 3rem; text-align: center">+</span>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>Asset</button>
+    <button mat-menu-item>Liability</button>
+  </mat-menu>
 </div>
 
 <app-footer></app-footer>
