@@ -1,3 +1,17 @@
 <app-navbar></app-navbar>
 
-<p style="text-align: center; margin: 3rem;">create page works!</p>
+<p style="text-align: center; margin: 3rem">create page works!</p>
+
+<div class="create-form">
+  <form [formGroup]="createForm">
+    <!-- <h3 style="font-weight: bold">New entry?</h3> -->
+    <mat-form-field appearance="fill">
+      <mat-label>Select type</mat-label>
+      <mat-select formControlName="createType">
+        <mat-option *ngFor="let i of createTypeList" [value]="i.value">
+          {{ i.viewValue }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </form>
+</div>
