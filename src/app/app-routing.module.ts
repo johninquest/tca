@@ -6,9 +6,15 @@ import { ProductsComponent } from './pages/products/products.component';
 import { DeviceInfoComponent } from './pages/device-info/device-info.component';
 import { NetworthComponent } from './pages/networth/networth.component';
 import { CreateComponent } from './pages/create/create.component';
+import { AuthComponent } from './pages/auth/auth.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/default', pathMatch: 'full' },
+  { path: '', redirectTo: '/default', pathMatch: 'full' }, 
+  {
+    path: 'auth',
+    component: AuthComponent,
+    title: 'Auth',
+  },
   {
     path: 'create',
     component: CreateComponent,

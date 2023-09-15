@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "nwtrackr"
+  },
+  "targets": {
+    "nwtrackr": {
+      "hosting": {
+        "nwtrackr": [
+          "nwtrackr"
+        ]
+      }
+    }
   }
 }

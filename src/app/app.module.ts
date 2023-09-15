@@ -15,6 +15,10 @@ import { DefaultComponent } from './pages/default/default.component';
 import { DeviceInfoComponent } from './pages/device-info/device-info.component';
 import { NetworthComponent } from './pages/networth/networth.component';
 import { CreateComponent } from './pages/create/create.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { AuthComponent } from './pages/auth/auth.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +31,7 @@ import { CreateComponent } from './pages/create/create.component';
     DeviceInfoComponent,
     NetworthComponent,
     CreateComponent,
+    AuthComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +40,8 @@ import { CreateComponent } from './pages/create/create.component';
     HttpClientModule,
     ReactiveFormsModule,
     MaterialModules,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
   ],
   providers: [],
   bootstrap: [AppComponent],

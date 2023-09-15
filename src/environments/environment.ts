@@ -1,5 +1,14 @@
 
 export const environment = {
+  firebase: {
+    projectId: 'nwtrackr',
+    appId: '1:278998231179:web:7179de67199e1a497b4c8e',
+    storageBucket: 'nwtrackr.appspot.com',
+    apiKey: 'AIzaSyC59fohxLMBUoTUnf4q8f183ZRfuoWvXPk',
+    authDomain: 'nwtrackr.firebaseapp.com',
+    messagingSenderId: '278998231179',
+    measurementId: 'G-FC7PG9GSWQ',
+  },
     production: false,
     supabaseUrl: "https://cyifcmqsbowqfnwycvjk.supabase.co",
     supabaseKey:
