@@ -7,6 +7,8 @@ import { DeviceInfoComponent } from './pages/device-info/device-info.component';
 import { NetworthComponent } from './pages/networth/networth.component';
 import { CreateComponent } from './pages/create/create.component';
 import { AuthComponent } from './pages/auth/auth.component';
+import { AssetCreateComponent } from './pages/assets/asset-create/asset-create.component';
+import { AssetListComponent } from './pages/assets/asset-list/asset-list.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/default', pathMatch: 'full' }, 
@@ -14,6 +16,16 @@ const routes: Routes = [
     path: 'auth',
     component: AuthComponent,
     title: 'Auth',
+  },
+  {
+    path: 'asset-create',
+    component: AssetCreateComponent,
+    title: 'Enter new asset',
+  },
+  {
+    path: 'asset-list',
+    component: AssetListComponent,
+    title: 'Assets list',
   },
   {
     path: 'create',

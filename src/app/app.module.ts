@@ -19,6 +19,9 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { AuthComponent } from './pages/auth/auth.component';
+import { AssetListComponent } from './pages/assets/asset-list/asset-list.component';
+import { AssetUpdateComponent } from './pages/assets/asset-update/asset-update.component';
+import { AssetCreateComponent } from './pages/assets/asset-create/asset-create.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +35,9 @@ import { AuthComponent } from './pages/auth/auth.component';
     NetworthComponent,
     CreateComponent,
     AuthComponent,
+    AssetListComponent,
+    AssetUpdateComponent,
+    AssetCreateComponent,
   ],
   imports: [
     BrowserModule,
