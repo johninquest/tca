@@ -1,6 +1,6 @@
 {
   "name": "nwtrackr",
-  "version": "0.10.6+1",
+  "version": "0.10.6+2",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -17,7 +17,6 @@
     "@angular/common": "^16.2.3",
     "@angular/compiler": "^16.2.3",
     "@angular/core": "^16.2.3",
-    "@angular/fire": "^7.6.1",
     "@angular/forms": "^16.2.3",
     "@angular/material": "^16.2.2",
     "@angular/platform-browser": "^16.2.3",
