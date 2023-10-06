@@ -9,6 +9,7 @@ import { CreateComponent } from './pages/create/create.component';
 import { AuthComponent } from './pages/auth/auth.component';
 import { AssetCreateComponent } from './pages/assets/asset-create/asset-create.component';
 import { AssetListComponent } from './pages/assets/asset-list/asset-list.component';
+import { UserComponent } from './pages/user/user.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/default', pathMatch: 'full' }, 
@@ -18,7 +19,7 @@ const routes: Routes = [
     title: 'Auth',
   },
   {
-    path: 'asset-create',
+    path: 'asset-new',
     component: AssetCreateComponent,
     title: 'Enter new asset',
   },
@@ -55,6 +56,10 @@ const routes: Routes = [
   {
     path: 'products',
     component: ProductsComponent,
+  }, 
+  {
+    path: 'user',
+    component: UserComponent,
   },
   {
     path: '**',

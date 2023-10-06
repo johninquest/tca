@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
+  noRoute(){
+    alert('No where to go, yet!')
+  }
+
 }

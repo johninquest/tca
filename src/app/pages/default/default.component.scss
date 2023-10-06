@@ -6,8 +6,8 @@
   text-align: center;
   min-height: 100vh;
   .headline {
-    color: indianred;
-    font-size: 1.5rem;
+    color: indianred; 
+    font-weight: bold;
     margin: 1rem;
   }
   .date {
@@ -17,7 +17,6 @@
     span {
       margin: 0.5rem;
       padding: 0.5rem;
-      font-weight: bold;
     }
   }
 }

@@ -22,6 +22,7 @@ import { AuthComponent } from './pages/auth/auth.component';
 import { AssetListComponent } from './pages/assets/asset-list/asset-list.component';
 import { AssetUpdateComponent } from './pages/assets/asset-update/asset-update.component';
 import { AssetCreateComponent } from './pages/assets/asset-create/asset-create.component';
+import { UserComponent } from './pages/user/user.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { AssetCreateComponent } from './pages/assets/asset-create/asset-create.c
     AssetListComponent,
     AssetUpdateComponent,
     AssetCreateComponent,
+    UserComponent,
   ],
   imports: [
     BrowserModule,
