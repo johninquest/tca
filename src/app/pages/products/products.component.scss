@@ -1,0 +1,11 @@
+.grid {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 3rem;
+  }
+  
+  .cell {
+    // border: 1px solid black;
+    text-align: center;
+    font-size: 3rem;
+  }

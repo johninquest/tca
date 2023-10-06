@@ -54,7 +54,7 @@ const routes: Routes = [
     title: 'Net worth',
   },
   {
-    path: 'products',
+    path: 'numbers',
     component: ProductsComponent,
   }, 
   {
