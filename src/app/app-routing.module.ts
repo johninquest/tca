@@ -12,7 +12,7 @@ import { AssetListComponent } from './pages/assets/asset-list/asset-list.compone
 import { UserComponent } from './pages/user/user.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/default', pathMatch: 'full' }, 
+  { path: '', redirectTo: '/default', pathMatch: 'full' },
   {
     path: 'auth',
     component: AuthComponent,
@@ -36,7 +36,7 @@ const routes: Routes = [
   {
     path: 'default',
     component: DefaultComponent,
-    title: 'Under construction',
+    title: 'Default page',
   },
   {
     path: 'device-info',
@@ -56,10 +56,12 @@ const routes: Routes = [
   {
     path: 'numbers',
     component: ProductsComponent,
-  }, 
+    title: 'Numbers we love'
+  },
   {
     path: 'user',
     component: UserComponent,
+    title: 'User information'
   },
   {
     path: '**',
@@ -71,4 +73,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
