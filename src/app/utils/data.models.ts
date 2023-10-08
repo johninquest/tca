@@ -1,4 +1,4 @@
-export interface ListDataDescriptor {
+export interface ListDataModel {
   value: string;
   viewValue: string;
 }

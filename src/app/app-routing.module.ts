@@ -29,9 +29,9 @@ const routes: Routes = [
     title: 'Assets list',
   },
   {
-    path: 'create',
+    path: 'new',
     component: CreateComponent,
-    title: 'Create a new entry',
+    title: 'New asset / liability',
   },
   {
     path: 'default',
