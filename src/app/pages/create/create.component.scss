@@ -3,7 +3,11 @@
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  mat-form-field {
-    width: 21rem;
+  form {
+    display: flex;
+    flex-flow: column nowrap;
+    mat-form-field {
+      width: 21rem;
+    }
   }
 }
