@@ -22,10 +22,24 @@ export class SupabaseService {
     return { data: requests, error };
   }
 
-  async addRowToDB(rowData: object) {
+  async addRowToTable(rowData: object) {
     let { data, error } = await this.supabase
       .from("requests")
       .insert([rowData]);
+    return { data, error };
+  } 
+
+  async updateRowInTable(rowData: object) {
+    let { data, error } = await this.supabase
+      .from("requests")
+      .insert([rowData]);
+    return { data, error };
+  } 
+
+  async deleteRowInTable(rowId: number) {
+    let { data, error } = await this.supabase
+      .from("requests").delete({});
+      
     return { data, error };
   }
 }

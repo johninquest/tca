@@ -20,6 +20,8 @@ import { AssetListComponent } from './pages/assets/asset-list/asset-list.compone
 import { AssetUpdateComponent } from './pages/assets/asset-update/asset-update.component';
 import { AssetCreateComponent } from './pages/assets/asset-create/asset-create.component';
 import { UserComponent } from './pages/user/user.component';
+import { LiabilityListComponent } from './pages/liabilities/liability-list/liability-list.component';
+import { LiabilityCreateComponent } from './pages/liabilities/liability-create/liability-create.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { UserComponent } from './pages/user/user.component';
     AssetUpdateComponent,
     AssetCreateComponent,
     UserComponent,
+    LiabilityListComponent,
+    LiabilityCreateComponent,
   ],
   imports: [
     BrowserModule,

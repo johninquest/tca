@@ -10,6 +10,8 @@ import { AuthComponent } from './pages/auth/auth.component';
 import { AssetCreateComponent } from './pages/assets/asset-create/asset-create.component';
 import { AssetListComponent } from './pages/assets/asset-list/asset-list.component';
 import { UserComponent } from './pages/user/user.component';
+import { LiabilityListComponent } from './pages/liabilities/liability-list/liability-list.component';
+import { LiabilityCreateComponent } from './pages/liabilities/liability-create/liability-create.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/default', pathMatch: 'full' },
@@ -19,14 +21,24 @@ const routes: Routes = [
     title: 'Auth',
   },
   {
-    path: 'asset-new',
-    component: AssetCreateComponent,
-    title: 'Enter new asset',
+    path: 'asset/list',
+    component: AssetListComponent,
+    title: 'List of assets',
   },
   {
-    path: 'asset-list',
-    component: AssetListComponent,
-    title: 'Assets list',
+    path: 'asset/new',
+    component: AssetCreateComponent,
+    title: 'New asset',
+  }, 
+  {
+    path: 'liability/list',
+    component: LiabilityListComponent,
+    title: 'List of liabilities',
+  },
+  {
+    path: 'liability/new',
+    component: LiabilityCreateComponent,
+    title: 'New liability',
   },
   {
     path: 'new',
