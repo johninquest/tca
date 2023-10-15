@@ -1,7 +1,7 @@
-import { Component } from '@angular/core'; 
+import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ListDataModel } from 'src/app/utils/data.models';
-import { MainCategoryList, AssetCategoryList, LiabilityCategoryList } from 'src/app/shared/categories';
+import { AssetCategoryList } from 'src/app/shared/categories';
 
 
 @Component({
@@ -12,25 +12,17 @@ import { MainCategoryList, AssetCategoryList, LiabilityCategoryList } from 'src/
 export class AssetCreateComponent {
   constructor() { }
 
+  entryType: string = 'asset';
+
   assetCreateForm = new FormGroup({
-    accountName: new FormControl<string>('', Validators.required), 
-    categoryName: new FormControl<string>('', Validators.required),
+    assetType: new FormControl<string>('', Validators.required),
+    assetName: new FormControl<string>('', Validators.required),
+    monetaryValue: new FormControl<string>('', Validators.required),
     isUrgent: new FormControl<string | null>(''),
   });
 
-  createTypeList: ListDataModel[] = MainCategoryList;
-  assetCategoryList: ListDataModel[] = AssetCategoryList; 
-  liabilityTypeList: ListDataModel[] = LiabilityCategoryList;
+  assetCategoryList: ListDataModel[] = AssetCategoryList;
 
-/*   setCategoryList(mainCategory: any) {
-    if(mainCategory === 'asset') {
-      return this.assetTypeList;
-    }if(mainCategory === 'liability') {
-      return this.liabilityTypeList;
-    }else {
-      return [];
-    }
-  } */
   onClickCancel() {
     history.back()
   }

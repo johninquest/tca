@@ -4,12 +4,12 @@
 
 <!-- <p
 style="text-align: center; margin: 3rem;">New asset page!</p>
- --> 
+ -->
 
- <div class="create-form">
-    <form [formGroup]="assetCreateForm">
-      <!-- <h3 style="font-weight: bold">New entry?</h3> -->
-<!--       <mat-form-field appearance="fill">
+<div class="create-form">
+  <form [formGroup]="assetCreateForm">
+    <!-- <h3 style="font-weight: bold">New entry?</h3> -->
+    <!--       <mat-form-field appearance="fill">
         <mat-label>Select type</mat-label>
         <mat-select formControlName="accountName">
           <mat-option *ngFor="let i of createTypeList" [value]="i.value">
@@ -17,26 +17,27 @@ style="text-align: center; margin: 3rem;">New asset page!</p>
           </mat-option>
         </mat-select>
       </mat-form-field>  -->
-      <mat-form-field appearance="fill">
-        <mat-label>Select category</mat-label>
-        <mat-select formControlName="categoryName">
-          <mat-option *ngFor="let i of assetCategoryList" [value]="i.value">
-            {{ i.viewValue }}
-          </mat-option>
-        </mat-select>
-      </mat-form-field> 
-      <mat-form-field appearance="fill">
-        <mat-label>Name</mat-label>
-        <input matInput type="text">
-      </mat-form-field> 
-      <mat-form-field appearance="fill">
-        <mat-label>Value (Monetary)</mat-label>
-        <input matInput type="number" min="1">
-      </mat-form-field>
-      <div class="btns">
-        <button mat-raised-button (click)="onClickCancel()">cancel</button> 
-        <button mat-raised-button color="primary" (click)="onClickSave()">save</button>
-      </div>
-    </form>
-  </div>
-  
+    <mat-form-field appearance="fill">
+      <mat-label>Type</mat-label>
+      <mat-select formControlName="assetType">
+        <mat-option *ngFor="let i of assetCategoryList" [value]="i.value">
+          {{ i.viewValue }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Name</mat-label>
+      <input matInput type="text" formControlName="assetName" />
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Value ($)</mat-label>
+      <input matInput type="number" min="1" formControlName="monetaryValue" />
+    </mat-form-field>
+    <div class="btns">
+      <button mat-raised-button (click)="onClickCancel()">cancel</button>
+      <button mat-raised-button color="primary" (click)="onClickSave()">
+        save
+      </button>
+    </div>
+  </form>
+</div>
