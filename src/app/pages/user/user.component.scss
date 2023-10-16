@@ -5,4 +5,28 @@
     letter-spacing: 0.1rem;
     color: var(--primary-color);
     text-transform: uppercase;
+  } 
+
+  
+.create-form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  form {
+    margin: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    mat-form-field {
+      width: 21rem;
+    }
+    .btns {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-evenly;
+      button {
+        text-transform: uppercase;
+      }
+    }
   }
+}

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ListDataModel } from 'src/app/utils/data.models';
-import { MainCategoryList, LiabilityCategoryList } from 'src/app/shared/categories';
+import { LiabilityCategoryList } from 'src/app/shared/categories';
 
 @Component({
   selector: 'app-liability-create',
@@ -19,7 +19,6 @@ export class LiabilityCreateComponent {
     monetaryValue: new FormControl(''),
   });
 
-  createTypeList: ListDataModel[] = MainCategoryList;
   liabilityTypeList: ListDataModel[] = LiabilityCategoryList;
 
   onClickCancel() {

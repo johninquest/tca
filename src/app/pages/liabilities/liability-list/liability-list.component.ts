@@ -5,6 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './liability-list.component.html',
   styleUrls: ['./liability-list.component.scss']
 })
-export class LiabilityListComponent {
+export class LiabilityListComponent { 
+
+  liabilityRecords: any
 
 }

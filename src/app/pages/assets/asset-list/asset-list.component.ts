@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AssetListComponent implements OnInit {
   ngOnInit(): void {
-    this.assetListData = 'No data, at the moment!';
+    this.assetRecords = 'No asset records found!';
   }
 
-  assetListData: any;
+  assetRecords: any;
 }

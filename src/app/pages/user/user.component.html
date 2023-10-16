@@ -2,4 +2,39 @@
 
 <div class="title">user information</div>
 
-<p style="text-align: center; margin: 3rem;">user works!</p>
+<div class="create-form">
+  <!-- <div style="margin: 1rem;">UserId: {{userId}}</div> -->
+    <form [formGroup]="userForm">
+      <mat-form-field appearance="fill">
+        <mat-label>First name</mat-label>
+        <input matInput type="text" formControlName="firstName" />
+      </mat-form-field> 
+      <mat-form-field appearance="fill">
+        <mat-label>Last name</mat-label>
+        <input matInput type="text" formControlName="lastName" />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Date of birth</mat-label>
+        <input matInput type="date" formControlName="dateOfBirth" />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Country</mat-label>
+        <input matInput type="text" min="1" formControlName="country" />
+      </mat-form-field> 
+      <mat-form-field appearance="fill">
+        <mat-label>Currency</mat-label>
+        <mat-select formControlName="currency">
+          <mat-option *ngFor="let i of currencyList" [value]="i.value">
+            {{ i.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <div class="btns">
+        <button mat-raised-button (click)="onClickCancel()">cancel</button> 
+        <button mat-raised-button color="accent" (click)="onClickEdit()">edit</button>
+        <button mat-raised-button color="primary" (click)="onClickSave()">
+          save
+        </button>
+      </div>
+    </form>
+  </div>
