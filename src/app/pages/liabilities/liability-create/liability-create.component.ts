@@ -15,8 +15,8 @@ export class LiabilityCreateComponent {
 
   liabilityCreateForm = new FormGroup({
     liabilityType: new FormControl<string>('', Validators.required),
-    liabilityName: new FormControl<string>('', Validators.required),
-    monetaryValue: new FormControl(''),
+    liabilityName: new FormControl<string>(''),
+    monetaryValue: new FormControl<string>('', Validators.required),
   });
 
   liabilityTypeList: ListDataModel[] = LiabilityCategoryList;

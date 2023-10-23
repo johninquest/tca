@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { createClient, SupabaseClient } from "@supabase/supabase-js"; 
+import { createClient, SupabaseClient } from "@supabase/supabase-js";
 import { environment } from "src/environments/environment";
 
 @Injectable({
@@ -9,8 +9,8 @@ export class SupabaseService {
 
   constructor() {
     this.supabase = createClient(
-      environment.supabaseUrl,
-      environment.supabaseKey
+      environment.supabase.projectUrl,
+      environment.supabase.projectKey
     );
   }
   private supabase: SupabaseClient;
@@ -27,19 +27,19 @@ export class SupabaseService {
       .from("requests")
       .insert([rowData]);
     return { data, error };
-  } 
+  }
 
   async updateRowInTable(rowData: object) {
     let { data, error } = await this.supabase
       .from("requests")
       .insert([rowData]);
     return { data, error };
-  } 
+  }
 
   async deleteRowInTable(rowId: number) {
     let { data, error } = await this.supabase
       .from("requests").delete({});
-      
+
     return { data, error };
   }
 }

@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MaterialModules } from './material.modules';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -10,11 +9,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { ProductsComponent } from './pages/products/products.component';
 import { DefaultComponent } from './pages/default/default.component';
 import { DeviceInfoComponent } from './pages/device-info/device-info.component';
 import { NetworthComponent } from './pages/networth/networth.component';
-import { CreateComponent } from './pages/create/create.component';
 import { AuthComponent } from './pages/auth/auth.component';
 import { AssetListComponent } from './pages/assets/asset-list/asset-list.component';
 import { AssetUpdateComponent } from './pages/assets/asset-update/asset-update.component';
@@ -29,11 +26,9 @@ import { LiabilityCreateComponent } from './pages/liabilities/liability-create/l
     HomeComponent,
     FooterComponent,
     NavbarComponent,
-    ProductsComponent,
     DefaultComponent,
     DeviceInfoComponent,
     NetworthComponent,
-    CreateComponent,
     AuthComponent,
     AssetListComponent,
     AssetUpdateComponent,
@@ -53,4 +48,4 @@ import { LiabilityCreateComponent } from './pages/liabilities/liability-create/l
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

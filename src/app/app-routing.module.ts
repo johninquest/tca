@@ -2,10 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DefaultComponent } from './pages/default/default.component';
 import { HomeComponent } from './pages/home/home.component';
-import { ProductsComponent } from './pages/products/products.component';
 import { DeviceInfoComponent } from './pages/device-info/device-info.component';
 import { NetworthComponent } from './pages/networth/networth.component';
-import { CreateComponent } from './pages/create/create.component';
 import { AuthComponent } from './pages/auth/auth.component';
 import { AssetCreateComponent } from './pages/assets/asset-create/asset-create.component';
 import { AssetListComponent } from './pages/assets/asset-list/asset-list.component';
@@ -29,7 +27,7 @@ const routes: Routes = [
     path: 'asset/new',
     component: AssetCreateComponent,
     title: 'New asset',
-  }, 
+  },
   {
     path: 'liability/list',
     component: LiabilityListComponent,
@@ -39,11 +37,6 @@ const routes: Routes = [
     path: 'liability/new',
     component: LiabilityCreateComponent,
     title: 'New liability',
-  },
-  {
-    path: 'new',
-    component: CreateComponent,
-    title: 'New asset / liability',
   },
   {
     path: 'default',
@@ -64,11 +57,6 @@ const routes: Routes = [
     path: 'networth',
     component: NetworthComponent,
     title: 'Net worth',
-  },
-  {
-    path: 'numbers',
-    component: ProductsComponent,
-    title: 'Numbers we love'
   },
   {
     path: 'user',

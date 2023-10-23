@@ -8,18 +8,21 @@ import { ListDataModel } from 'src/app/utils/data.models';
   templateUrl: './user.component.html',
   styleUrls: ['./user.component.scss']
 })
-export class UserComponent  implements OnInit{  
+export class UserComponent implements OnInit {
   ngOnInit(): void {
-      this.userForm.disable()
+    this.userForm.disable()
+    this.userForm.patchValue({
+      currency: 'eur'
+    })
   }
 
   userId: any;
 
   userForm = new FormGroup({
     userId: new FormControl<string>('', Validators.required),
-    firstName: new FormControl<string>(''), 
-    lastName: new FormControl<string>(''), 
-    dateOfBirth: new FormControl<string>(''), 
+    firstName: new FormControl<string>(''),
+    lastName: new FormControl<string>(''),
+    dateOfBirth: new FormControl<string>(''),
     country: new FormControl<string>(''),
     currency: new FormControl(''),
   });
