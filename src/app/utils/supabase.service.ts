@@ -15,23 +15,23 @@ export class SupabaseService {
   }
   private supabase: SupabaseClient;
 
-  async getSubmittedReqs() {
+  async getAllRowsInTable(tableName: string) {
     let { data: requests, error } = await this.supabase
-      .from("requests")
+      .from(tableName)
       .select("*");
     return { data: requests, error };
   }
 
-  async addRowToTable(rowData: object) {
+  async addRowToTable(tableName: string, rowData: object) {
     let { data, error } = await this.supabase
-      .from("requests")
+      .from(tableName)
       .insert([rowData]);
     return { data, error };
   }
 
-  async updateRowInTable(rowData: object) {
+  async updateRowInTable(tableName: string, rowData: object) {
     let { data, error } = await this.supabase
-      .from("requests")
+      .from(tableName)
       .insert([rowData]);
     return { data, error };
   }

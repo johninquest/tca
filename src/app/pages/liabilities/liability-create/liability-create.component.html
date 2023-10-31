@@ -3,7 +3,7 @@
 <div class="title">new liability</div>
 
 <div class="create-form">
-  <form [formGroup]="liabilityCreateForm">
+  <form [formGroup]="liabilityForm">
     <!-- <h3 style="font-weight: bold">New entry?</h3> -->
     <!--       <mat-form-field appearance="fill">
         <mat-label>Select type</mat-label>
@@ -26,8 +26,12 @@
       <input matInput type="text" formControlName="liabilityName" />
     </mat-form-field>
     <mat-form-field appearance="fill">
-      <mat-label>Value ($)</mat-label>
+      <mat-label>Approx. value ($)</mat-label>
       <input matInput type="number" min="1" formControlName="monetaryValue" />
+    </mat-form-field> 
+    <mat-form-field appearance="fill">
+      <mat-label>Date</mat-label>
+      <input matInput type="date" formControlName="dateOfValue" />
     </mat-form-field>
     <div class="btns">
       <button mat-raised-button (click)="onClickCancel()">cancel</button>

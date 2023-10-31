@@ -15,9 +15,10 @@ export class AssetCreateComponent {
   entryType: string = 'asset';
 
   assetCreateForm = new FormGroup({
-    assetType: new FormControl<string>('', Validators.required),
-    assetName: new FormControl<string>(''),
-    monetaryValue: new FormControl<string>('', Validators.required)
+    type: new FormControl<string>('', Validators.required),
+    name: new FormControl<string>('', Validators.required),
+    monetaryValue: new FormControl<string>('', Validators.required), 
+    dateOfValue: new FormControl<string>(''),
   });
 
   assetCategoryList: ListDataModel[] = AssetCategoryList;

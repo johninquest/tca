@@ -8,15 +8,6 @@ style="text-align: center; margin: 3rem;">New asset page!</p>
 
 <div class="create-form">
   <form [formGroup]="assetCreateForm">
-    <!-- <h3 style="font-weight: bold">New entry?</h3> -->
-    <!--       <mat-form-field appearance="fill">
-        <mat-label>Select type</mat-label>
-        <mat-select formControlName="accountName">
-          <mat-option *ngFor="let i of createTypeList" [value]="i.value">
-            {{ i.viewValue }}
-          </mat-option>
-        </mat-select>
-      </mat-form-field>  -->
     <mat-form-field appearance="fill">
       <mat-label>Type</mat-label>
       <mat-select formControlName="assetType">
@@ -32,6 +23,10 @@ style="text-align: center; margin: 3rem;">New asset page!</p>
     <mat-form-field appearance="fill">
       <mat-label>Value ($)</mat-label>
       <input matInput type="number" min="1" formControlName="monetaryValue" />
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Date</mat-label> 
+      <input matInput type="date" formControlName="dateOfValue" />
     </mat-form-field>
     <div class="btns">
       <button mat-raised-button (click)="onClickCancel()">cancel</button>
