@@ -10,9 +10,9 @@ export const environment = {
       measurementId: 'G-FC7PG9GSWQ',
     }, */
   supabase: {
-    projectUrl: "https://cyifcmqsbowqfnwycvjk.supabase.co",
+    projectUrl: "https://ubmbvvblgcwefxsiqita.supabase.co",
     projectKey:
-      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN5aWZjbXFzYm93cWZud3ljdmprIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjgwOTI2NDUsImV4cCI6MTk4MzY2ODY0NX0.nuI2Y6NO_QusYOJwW3u-h97wpxu5xcznsg7CGbYuq00",
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVibWJ2dmJsZ2N3ZWZ4c2lxaXRhIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTg0OTkxOTMsImV4cCI6MjAxNDA3NTE5M30.1lJsvLFiFMKJGUD4KNAhtxKXCqbRU5hThenh-bS3MnQ",
   },
   production: true,
 }; 
