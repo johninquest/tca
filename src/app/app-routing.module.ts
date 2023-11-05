@@ -44,7 +44,7 @@ const routes: Routes = [
     title: 'Default page',
   },
   {
-    path: 'device-info',
+    path: 'device',
     component: DeviceInfoComponent,
     title: 'Device information',
   },

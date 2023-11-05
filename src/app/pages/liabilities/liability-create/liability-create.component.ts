@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ListDataModel } from 'src/app/utils/data.models';
-import { LiabilityCategoryList } from 'src/app/shared/categories'; 
+import { LiabilityCategoryList } from 'src/app/shared/categories';
 import { DatetimeService } from 'src/app/utils/datetime.service';
 
 @Component({
@@ -12,7 +12,11 @@ import { DatetimeService } from 'src/app/utils/datetime.service';
 export class LiabilityCreateComponent implements OnInit {
   constructor(private _dts: DatetimeService) { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    this.liabilityForm.patchValue({
+      dateOfValue: this._dts.currentDate,
+    })
+  }
 
   entryType: string = 'liability';
 

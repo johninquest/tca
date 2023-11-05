@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { CurrencyList } from 'src/app/shared/currencies';
+import { COUNTRIES } from 'src/app/shared/countries';
 import { ListDataModel } from 'src/app/utils/data.models';
 
 @Component({
@@ -12,7 +13,8 @@ export class UserComponent implements OnInit {
   ngOnInit(): void {
     this.userForm.disable()
     this.userForm.patchValue({
-      currency: 'eur'
+      currency: 'eur',
+      country: 'germany'
     })
   }
 
@@ -28,6 +30,7 @@ export class UserComponent implements OnInit {
   });
 
   currencyList: ListDataModel[] = CurrencyList;
+  countryList: ListDataModel[] = COUNTRIES;
 
   onClickCancel() {
     history.back()

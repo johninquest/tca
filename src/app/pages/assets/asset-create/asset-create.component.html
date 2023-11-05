@@ -7,7 +7,7 @@ style="text-align: center; margin: 3rem;">New asset page!</p>
  -->
 
 <div class="create-form">
-  <form [formGroup]="assetCreateForm">
+  <form [formGroup]="assetForm">
     <mat-form-field appearance="fill">
       <mat-label>Type</mat-label>
       <mat-select formControlName="assetType">
@@ -25,7 +25,7 @@ style="text-align: center; margin: 3rem;">New asset page!</p>
       <input matInput type="number" min="1" formControlName="monetaryValue" />
     </mat-form-field>
     <mat-form-field appearance="fill">
-      <mat-label>Date</mat-label> 
+      <mat-label>Date</mat-label>
       <input matInput type="date" formControlName="dateOfValue" />
     </mat-form-field>
     <div class="btns">

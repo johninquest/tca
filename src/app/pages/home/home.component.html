@@ -6,12 +6,16 @@
   <button mat-raised-button color="primary" (click)="goToPage('asset/list')">
     assets
   </button>
-  <button mat-raised-button color="primary" (click)="goToPage('liability/list')">
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="goToPage('liability/list')"
+  >
     liabilities
   </button>
   <button mat-raised-button color="primary" (click)="goToPage('networth')">
     net worth
-  </button> 
+  </button>
 </div>
 <!-- <div class="create-btn">
   <mat-icon (click)="goToPage('create')" matTooltip="Enter new Asset/Liability"
@@ -30,6 +34,6 @@
 
 <app-footer></app-footer>
 
-<div class="device-icon" routerLink="/device-info">
+<div class="device-icon" routerLink="/device">
   <mat-icon>perm_device_information</mat-icon>
 </div>
