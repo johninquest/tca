@@ -22,6 +22,20 @@ export class SupabaseService {
     return { data: requests, error };
   }
 
+  async allRowsInTable(tableName: string) {
+    let { data: requests, error } = await this.supabase
+      .from(tableName)
+      .select("*");
+    return { data: requests, error };
+  }
+
+  async allRowsInTableWhere(tableName: string, whereColumn: string, whereValue: string) {
+    let { data: requests, error } = await this.supabase
+      .from(tableName)
+      .select("*").eq(whereColumn, whereValue);
+    return { data: requests, error };
+  }
+
   async addRowToTable(tableName: string, rowData: object) {
     let { data, error } = await this.supabase
       .from(tableName)
@@ -36,9 +50,9 @@ export class SupabaseService {
     return { data, error };
   }
 
-  async deleteRowInTable(rowId: number) {
+  async deleteRowInTable(tableName: string, rowId: number) {
     let { data, error } = await this.supabase
-      .from("requests").delete({});
+      .from(tableName).delete({});
 
     return { data, error };
   }

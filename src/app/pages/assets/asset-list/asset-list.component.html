@@ -2,4 +2,30 @@
 
 <div class="title">list of assets</div>
 
-<div style="text-align: center;">{{ assetRecords | json }}</div>
+<!-- <div style="text-align: center">{{ assetRecords | json }}</div> -->
+
+<div class="nw-table">
+  <table *ngIf="assetRecords">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <!--  <th>Category</th> -->
+        <th>Type</th>
+        <th>Name</th>
+        <th>Monetary value</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let i of assetRecords">
+        <td>{{ dateFormatted(i.created_at) }}</td>
+        <!-- <td style="text-transform: capitalize">{{ i.category }}</td> -->
+        <td style="text-transform: capitalize">{{ i.type }}</td>
+        <td style="text-transform: capitalize">{{ i.name }}</td>
+        <td style="text-transform: capitalize">
+          {{ i.monetary_value | currency : "EUR" }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
