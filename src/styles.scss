@@ -1,11 +1,11 @@
 @use "@angular/material" as mat;
 @include mat.core();
 
-$sba-primary: mat.define-palette(mat.$teal-palette, 500, 300, 100);
-$sba-accent: mat.define-palette(mat.$gray-palette, 800, 500, 300, 100);
+$sba-primary: mat.define-palette(mat.$blue-palette, A700);
+$sba-accent: mat.define-palette(mat.$amber-palette, 500);
 
 // The warn palette is optional (defaults to red).
-$sba-warn: mat.define-palette(mat.$red-palette);
+$sba-warn: mat.define-palette(mat.$grey-palette, 900);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
@@ -39,15 +39,15 @@ body {
 $myfont: "Roboto Mono", monospace;
 * {
   font: 100% $myfont;
-} 
+}
 
 :root {
   --primary-color: #212121;
   --primary-color-lighter: #424242;
   --secondary-color: #009688;
   --secondary-color-light: #4db6ac;
-  --secondary-color-lighter: #b2dfdb; 
-  --secondary-color-darker: #00695C; 
+  --secondary-color-lighter: #b2dfdb;
+  --secondary-color-darker: #00695c;
   --txt-black-color: #212121;
   // --primary-color: #424242;
   --txt-white-color: #e0e0e0;
