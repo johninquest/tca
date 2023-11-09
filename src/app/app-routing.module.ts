@@ -51,7 +51,7 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
-    title: 'NetWorth360 | What Can I Afford?',
+    title: 'SteuerBro: Dein Steuerkumpel',
   },
   {
     path: 'networth',
