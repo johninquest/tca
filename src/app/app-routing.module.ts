@@ -10,6 +10,7 @@ import { AssetListComponent } from './pages/assets/asset-list/asset-list.compone
 import { UserComponent } from './pages/user/user.component';
 import { LiabilityListComponent } from './pages/liabilities/liability-list/liability-list.component';
 import { LiabilityCreateComponent } from './pages/liabilities/liability-create/liability-create.component';
+import { InfoComponent } from './pages/info/info.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/default', pathMatch: 'full' },
@@ -52,6 +53,11 @@ const routes: Routes = [
     path: 'home',
     component: HomeComponent,
     title: 'SteuerBro: Dein Steuerkumpel',
+  }, 
+  {
+    path: 'info',
+    component: InfoComponent,
+    title: 'Informationen',
   },
   {
     path: 'networth',

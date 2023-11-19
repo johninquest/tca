@@ -1,0 +1,30 @@
+.title {
+    margin: 3rem 1rem 1rem 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .taxes {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  table {
+    width: 21rem;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left; 
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }

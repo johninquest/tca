@@ -1,0 +1,24 @@
+<app-navbar></app-navbar>
+
+<div class="title">Liste der wichtigsten Steuern in Deutschland</div>
+
+<!-- <div style="text-align: center; margin: 1rem; text-transform: capitalize">
+  {{ typesOfTaxes }}
+</div> -->
+
+<div class="taxes">
+    <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of typesOfTaxes; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ item }}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
