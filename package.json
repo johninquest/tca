@@ -1,6 +1,6 @@
 {
   "name": "tca",
-  "version": "0.11.19",
+  "version": "0.11.29",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
