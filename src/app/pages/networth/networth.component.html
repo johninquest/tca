@@ -1,41 +1,20 @@
 <app-navbar></app-navbar>
 
-<div class="title">net worth</div>
+<div class="title">rechner</div>
 
-<div style="text-align: center">Net worth = Assets - Liabilities</div>
+<!-- <div style="text-align: center">Net worth = Assets - Liabilities</div> -->
 
-<!-- <div style="text-align: center; margin: 3rem 1rem">
-  {{ netWorthData | json }}
-</div> -->
-
-<div class="nw-table">
-  <table *ngIf="netWorthData">
-    <thead>
-      <tr>
-        <th>Date</th>
-        <th>Category</th>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Monetary value</th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <tr *ngFor="let i of netWorthData">
-        <td>{{ dateFormatted(i.created_at) }}</td>
-        <td style="text-transform: capitalize">{{ i.category }}</td>
-        <td style="text-transform: capitalize">{{ i.type }}</td>
-        <td style="text-transform: capitalize">{{ i.name }}</td>
-        <td style="text-transform: capitalize">{{ i.monetary_value }}</td>
-        <!--         <td>
-          <span (click)="onClickJobEdit()" style="cursor: pointer"
-            ><mat-icon>edit</mat-icon></span
-          ><span>&nbsp;&nbsp;&nbsp;</span>
-          <span (click)="onClickJobDelete()" style="cursor: pointer"
-            ><mat-icon>delete</mat-icon></span
-          >
-        </td> -->
-      </tr>
-    </tbody>
-  </table>
+<div class="calculators">
+  <mat-card>
+    <mat-card-content>einkommsteuer</mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-content>umsatzsteuer</mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-content>kirchensteuer</mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-content>grundsteuer</mat-card-content>
+  </mat-card>
 </div>

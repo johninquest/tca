@@ -7,18 +7,20 @@
 </div> -->
 
 <div class="taxes">
-    <table>
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Name</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let item of typesOfTaxes; let i = index">
-            <td>{{ i + 1 }}</td>
-            <td>{{ item }}</td>
-          </tr>
-        </tbody>
-      </table>
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Satz (%)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of typesOfTaxes; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ item }}</td>
+        <td>#</td>
+      </tr>
+    </tbody>
+  </table>
 </div>

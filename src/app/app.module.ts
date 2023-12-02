@@ -13,12 +13,7 @@ import { DefaultComponent } from './pages/default/default.component';
 import { DeviceInfoComponent } from './pages/device-info/device-info.component';
 import { NetworthComponent } from './pages/networth/networth.component';
 import { AuthComponent } from './pages/auth/auth.component';
-import { AssetListComponent } from './pages/assets/asset-list/asset-list.component';
-import { AssetUpdateComponent } from './pages/assets/asset-update/asset-update.component';
-import { AssetCreateComponent } from './pages/assets/asset-create/asset-create.component';
 import { UserComponent } from './pages/user/user.component';
-import { LiabilityListComponent } from './pages/liabilities/liability-list/liability-list.component';
-import { LiabilityCreateComponent } from './pages/liabilities/liability-create/liability-create.component'; 
 import { InfoComponent } from './pages/info/info.component';
 
 @NgModule({
@@ -31,12 +26,7 @@ import { InfoComponent } from './pages/info/info.component';
     DeviceInfoComponent,
     NetworthComponent,
     AuthComponent,
-    AssetListComponent,
-    AssetUpdateComponent,
-    AssetCreateComponent,
     UserComponent,
-    LiabilityListComponent,
-    LiabilityCreateComponent, 
     InfoComponent,
   ],
   imports: [

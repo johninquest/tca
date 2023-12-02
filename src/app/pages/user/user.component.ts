@@ -44,4 +44,8 @@ export class UserComponent implements OnInit {
     this.userForm.enable()
   }
 
+  comingSoon() {
+    alert('Under construction!')
+  }
+
 }

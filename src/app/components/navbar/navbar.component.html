@@ -26,20 +26,20 @@
     </li>
   </ul>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item [matMenuTriggerFor]="assets">
-      <!--  <mat-icon>info</mat-icon> -->
+    <!--
+    <button mat-menu-item [matMenuTriggerFor]="assets">     
       <span class="btn-txt">assets</span>
     </button>
     <button mat-menu-item [matMenuTriggerFor]="liabilities">
-      <!--  <mat-icon>info</mat-icon> -->
+      
       <span class="btn-txt">liabilities</span>
+    </button> -->
+    <button mat-menu-item routerLink="/calculators">
+      <span class="btn-txt">rechner</span>
     </button>
-    <button mat-menu-item routerLink="/networth">
-      <span class="btn-txt">net worth</span>
-    </button> 
     <button mat-menu-item routerLink="/info">
       <span class="btn-txt">info</span>
-    </button> 
+    </button>
   </mat-menu>
 </nav>
 
@@ -52,10 +52,10 @@
     <!--  <mat-icon>info</mat-icon> -->
     <span class="btn-txt">new</span>
   </button>
- <!--  <button mat-menu-item routerLink="/networth">
+  <!--  <button mat-menu-item routerLink="/networth">
     <span class="btn-txt">net worth</span>
   </button> -->
-</mat-menu> 
+</mat-menu>
 
 <mat-menu #liabilities="matMenu">
   <button mat-menu-item routerLink="/liability/list">
@@ -66,7 +66,7 @@
     <!--  <mat-icon>info</mat-icon> -->
     <span class="btn-txt">new</span>
   </button>
- <!--  <button mat-menu-item routerLink="/networth">
+  <!--  <button mat-menu-item routerLink="/networth">
     <span class="btn-txt">net worth</span>
   </button> -->
 </mat-menu>
