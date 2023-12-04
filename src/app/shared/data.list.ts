@@ -1,14 +1,21 @@
 export const ListOfTaxes: Array<string> = [
   'einkommensteuer',
-  'umsatzsteuer',
-  'körperschaftsteuer',
-  'solidaritätszuschlag',
-  'erbschaftsteuer',
-  'schenkungsteuer',
+  'erbschaftssteuer',
+  'gewerbesteuer',
   'grundsteuer',
   'kapitalertragsteuer',
-  'gewerbesteuer',
   'kirchensteuer',
+  'körperschaftsteuer',
+  'solidaritätszuschlag',
+  'schenkungsteuer', 
+  'umsatzsteuer',
+]; 
+
+export const DeListOfTaxes: Array<object> = [
+  {name: 'einkommensteuer', rate: '0, 14, 24, 42 & 45'}, 
+  {name: 'erbschaftssteuer', rate: '7 - 50'}, 
+  {name: 'gewerbesteuer', rate: 'N. V.'}, 
+
 ]; 
 
 /*

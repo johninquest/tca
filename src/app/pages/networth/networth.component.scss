@@ -3,17 +3,25 @@
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
+  letter-spacing: 0.1rem;
 }
 
 .calculators {
-  margin: 1rem;
+  margin: 1rem 3rem;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-evenly;
   mat-card {
     width: 21rem;
     margin: 1rem;
     text-transform: capitalize;
     cursor: pointer;
+    mat-card-content {
+      letter-spacing: 0.1rem;
+    }
+    
+    &:hover {
+      background-color: var(--secondary-color-light);
+    }
   }
 }

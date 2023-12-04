@@ -14,7 +14,8 @@ import { DeviceInfoComponent } from './pages/device-info/device-info.component';
 import { NetworthComponent } from './pages/networth/networth.component';
 import { AuthComponent } from './pages/auth/auth.component';
 import { UserComponent } from './pages/user/user.component';
-import { InfoComponent } from './pages/info/info.component';
+import { InfoComponent } from './pages/info/info.component'; 
+import { IncomeTaxComponent } from './pages/income-tax/income-tax.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { InfoComponent } from './pages/info/info.component';
     AuthComponent,
     UserComponent,
     InfoComponent,
+    IncomeTaxComponent
   ],
   imports: [
     BrowserModule,

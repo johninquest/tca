@@ -7,6 +7,7 @@ import { NetworthComponent } from './pages/networth/networth.component';
 import { AuthComponent } from './pages/auth/auth.component';
 import { UserComponent } from './pages/user/user.component';
 import { InfoComponent } from './pages/info/info.component';
+import { IncomeTaxComponent } from './pages/income-tax/income-tax.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/default', pathMatch: 'full' },
@@ -29,6 +30,11 @@ const routes: Routes = [
     path: 'home',
     component: HomeComponent,
     title: 'SteuerBro: Dein Steuerkumpel',
+  },
+  {
+    path: 'einkommensteuer',
+    component: IncomeTaxComponent,
+    title: 'Einkommensteuer Rechner',
   },
   {
     path: 'info',
