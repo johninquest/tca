@@ -16,6 +16,8 @@ import { AuthComponent } from './pages/auth/auth.component';
 import { UserComponent } from './pages/user/user.component';
 import { InfoComponent } from './pages/info/info.component'; 
 import { IncomeTaxComponent } from './pages/income-tax/income-tax.component';
+import { ValueAddedTaxComponent } from './pages/value-added-tax/value-added-tax.component';
+import { ChurchTaxComponent } from './pages/church-tax/church-tax.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { IncomeTaxComponent } from './pages/income-tax/income-tax.component';
     AuthComponent,
     UserComponent,
     InfoComponent,
-    IncomeTaxComponent
+    IncomeTaxComponent,
+    ValueAddedTaxComponent,
+    ChurchTaxComponent
   ],
   imports: [
     BrowserModule,

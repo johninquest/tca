@@ -8,6 +8,8 @@ import { AuthComponent } from './pages/auth/auth.component';
 import { UserComponent } from './pages/user/user.component';
 import { InfoComponent } from './pages/info/info.component';
 import { IncomeTaxComponent } from './pages/income-tax/income-tax.component';
+import { ValueAddedTaxComponent } from './pages/value-added-tax/value-added-tax.component';
+import { ChurchTaxComponent } from './pages/church-tax/church-tax.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/default', pathMatch: 'full' },
@@ -32,9 +34,19 @@ const routes: Routes = [
     title: 'SteuerBro: Dein Steuerkumpel',
   },
   {
-    path: 'einkommensteuer',
+    path: 'rechner/einkommensteuer',
     component: IncomeTaxComponent,
-    title: 'Einkommensteuer Rechner',
+    title: 'Rechner | Einkommensteuer',
+  },
+  {
+    path: 'rechner/mehrwertsteuer',
+    component: ValueAddedTaxComponent,
+    title: 'Rechner | Mehrwertsteuer',
+  },
+  {
+    path: 'rechner/kirchensteuer',
+    component: ChurchTaxComponent,
+    title: 'Rechner | Kirchensteuer',
   },
   {
     path: 'info',
@@ -42,9 +54,9 @@ const routes: Routes = [
     title: 'Informationen',
   },
   {
-    path: 'calculators',
+    path: 'rechner',
     component: NetworthComponent,
-    title: 'Net worth',
+    title: 'Rechner',
   },
   {
     path: 'user',

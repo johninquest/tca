@@ -12,9 +12,10 @@ export const ListOfTaxes: Array<string> = [
 ]; 
 
 export const DeListOfTaxes: Array<object> = [
-  {name: 'einkommensteuer', rate: '0, 14, 24, 42 & 45'}, 
+  {name: 'einkommensteuer', abbreviation: 'abbreviation', category: 'besitzsteuer', rate: '0, 14, 24, 42 & 45'}, 
   {name: 'erbschaftssteuer', rate: '7 - 50'}, 
   {name: 'gewerbesteuer', rate: 'N. V.'}, 
+  {name: 'mehrwertsteuer', abbreviation: 'MwSt.', category: 'verkehrsteuer', rate: '0, 7, 19'},
 
 ]; 
 
