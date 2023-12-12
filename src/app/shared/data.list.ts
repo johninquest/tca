@@ -6,6 +6,7 @@ export const ListOfTaxes: Array<string> = [
   'kapitalertragsteuer',
   'kirchensteuer',
   'körperschaftsteuer',
+  'mehrwertsteuer',
   'solidaritätszuschlag',
   'schenkungsteuer', 
   'umsatzsteuer',
